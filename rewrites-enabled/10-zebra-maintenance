@@ -1,0 +1,24 @@
+#RewriteCond %{HTTP_HOST} ^stage-auth\.zebra\.ctmsp\.com$ [NC]
+#RewriteRule ^/maintenance/zebra-logo-horiz-simple.png - [L]
+
+#RewriteCond %{HTTP_HOST} ^stage-auth\.zebra\.ctmsp\.com$ [NC]
+#RewriteCond %{REQUEST_URI}  !^/maintenance/zebra-logo-horiz-simple.png 
+#RewriteCond %{REQUEST_URI}  !^/maintenance/maintenance.html
+#RewriteRule ^/.*$ http://stage-auth.zebra.ctmsp.com/maintenance/maintenance.html [R,L]
+
+#RewriteCond %{HTTP_HOST} ^stage-author\.zebra\.lan$ [NC]
+#RewriteCond %{REQUEST_URI}  !^/maintenance/zebra-logo-horiz-simple.png
+#RewriteCond %{REQUEST_URI}  !^/maintenance/maintenance.html
+#RewriteRule ^/.*$ http://stage-author.zebra.lan/maintenance/maintenance.html [R,L]
+
+#RewriteCond %{HTTP_HOST} ^stage-auth\.zebra\.ctmsp\.com$ [NC]
+#RewriteRule ^/maintenance/maintenance.html - [L]
+
+#RewriteCond %{HTTP_HOST} ^stage-auth\.zebra\.ctmsp\.com$ [NC]
+#RewriteRule ^/.*$ http://stage-auth.zebra.ctmsp.com/maintenance/maintenance.html [R,L]
+
+#RewriteCond %{HTTP_HOST} ^stage-author\.zebra\.lan$ [NC]
+#RewriteRule ^/maintenance/maintenance.html - [L]
+
+#RewriteCond %{HTTP_HOST} ^stage-author\.zebra\.lan$ [NC]
+#RewriteRule ^/.*$ http://stage-author.zebra.lan/maintenance/maintenance.html [R,L]
